@@ -21,3 +21,5 @@ Here is animation showing intermediate of the following algorithms:
 Please refer to [FinalNB](FinalNB.ipynb) for the complete code.
 
 Here's a [link](https://drive.google.com/open?id=1vyAYN9v2A-Ll-6veON9y08_-uxxMTx4mNtuNXiejnSA) to Presentation created out of this project.
+
+PS: This is a project assignment for course CSE627 at Miami University.
