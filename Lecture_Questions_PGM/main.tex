@@ -1,0 +1,140 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[addpoints]{exam}
+\usepackage[utf8]{inputenc}
+ 
+\noprintanswers
+
+\begin{document}
+ 
+\title{Probabilistic Graphical Models}%replace X with the appropriate number
+\author{Lab Questions\\ %replace with your name
+CSE 627A: Machine Learning} %if necessary, replace with your course title
+\maketitle
+
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{0.2in}\newline
+These questions are to help me verify that you get what I want you to learn out of our labs.
+\vspace{0.2in}
+
+\begin{questions}
+\question[0]
+What are Graphical Models?
+\begin{solutionordottedlines}[1in]
+diagrammatic representation of probability distribution
+\end{solutionordottedlines}
+
+\question[0]
+What are the 3 types of graphical models?
+\begin{solutionordottedlines}[1in]
+BN, MRF and FG
+\end{solutionordottedlines}
+
+\question[0]
+Name any potential application area of PGM?
+\begin{solutionordottedlines}[1in]
+Pattern Recognition
+\end{solutionordottedlines}
+
+\question[0]
+What does a node represent in graph of PGM?
+\begin{solutionordottedlines}[1in]
+a random variable
+\end{solutionordottedlines}
+
+\question[0]
+Which type of graph is used by Markov Random Fields?
+\begin{solutionordottedlines}[1in]
+Undirected Graphs
+\end{solutionordottedlines}
+
+\question[0] 
+What is the difference between Bayesian Network and Markov Random Field?
+\begin{solutionordottedlines}[1in]
+BN use directed graph but MRF use undirected graph
+\end{solutionordottedlines}
+
+\question[0]
+What is a CLIQUE?
+\begin{solutionordottedlines}[1in]
+a subset of the nodes in a graph such that there exists a link between all pairs of nodes in the subset.
+\end{solutionordottedlines}
+
+\question[0]
+Write the formula for joint distribution over maximal cliques of the graph.
+\begin{solutionordottedlines}[1in]
+$$ p(\mathbf{x}) = \prod_s f_s(\mathbf{x_s}) $$
+\end{solutionordottedlines}
+
+\question[0]
+What is a potential function? 
+\begin{solutionordottedlines}[1in]
+Potential function are the functions defined over cliques which is always greater than or equal to zero.
+\end{solutionordottedlines}
+
+\question[0]
+What is image de-noising used for?
+\begin{solutionordottedlines}[1in]
+to recover the original noise-free image from given noisy image
+\end{solutionordottedlines}
+
+\question[0]
+What is Ising Model?
+\begin{solutionordottedlines}[1in]
+a mathematical model of discrete variables that represent one of the two states(-1,+1) in a graph, usually a lattice 
+\end{solutionordottedlines}
+
+\question[0]
+What is Moralization?
+\begin{solutionordottedlines}[1in]
+A moral graph which 'marries the parents' nodes
+\end{solutionordottedlines}
+
+\question[0]
+What is a factor graph?
+\begin{solutionordottedlines}[1in]
+graph which consists variables and factors
+\end{solutionordottedlines}
+
+\question[0]
+How are variables and factors represented in graphs?
+\begin{solutionordottedlines}[1in]
+circles and squares
+\end{solutionordottedlines}
+
+\question[0]
+Why are factor graphs called bipartite?
+\begin{solutionordottedlines}[1in]
+they consist of two distinct kinds of nodes and all links go between nodes of opposite types
+\end{solutionordottedlines}
+
+\question[0]
+What library is used to draw (factor)graphs in python?
+\begin{solutionordottedlines}[1in]
+fglib
+\end{solutionordottedlines}
+
+\question[0]
+What algorithm is also called belief propagation?
+\begin{solutionordottedlines}[1in]
+Sum-product algorithm is also known as belief propagation.
+\end{solutionordottedlines}
+
+\question[0]
+How to trace forward and backward path from root node while using inference algorithms (sum-product) on factor graph?
+\begin{solutionordottedlines}[1in]
+Using DFS(depth first search)
+\end{solutionordottedlines}
+
+\question[0]
+How do you differentiate Max Sum algorithm with Sum Product algorithm?
+\begin{solutionordottedlines}[1in]
+Sum-Product obtains the marginals for every variable and max-sum finds the value of variable that maximizes that marginal
+\end{solutionordottedlines}
+
+\end{questions}
+
+\end{document}
